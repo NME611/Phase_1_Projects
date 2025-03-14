@@ -6,18 +6,20 @@
     <title>Elevate</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header class="bg-dark text-white">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
             <a class="navbar-brand" href="#">Elevate</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportiveContent" aria-controls="navbarSupportiveContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex justify-content-end me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -35,24 +37,21 @@
         </nav>
     </header>
 
-    
-
     <section class="hero bg-light text-center py-5">
-        <div class="ElevateLogo">
+        <div class="ElevateLogo mb-3">
             <img src="Images/Elevate.jpg" alt="Company Logo" class="Logo">
         </div>
         <div class="container">
             <h1 class="display-4">Welcome to Elevate</h1>
             <p class="lead">We offer exceptional services to empower your potential and elevate your career.</p>
-            <a href="www.google.com" class="btn btn-primary btn-lg">Learn More</a>
+            <a href="https://www.google.com" alt="btn btn-primary btn-lg" target="_blank">Learn More</a>
         </div>
-
     </section>
 
-    <section class="features py-5" id="services">
+    <section class="features py-5 bg-light" id="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="feature-box text-center">
                         <div class="feature-icon mb-3">
                             <i class="fas fa-chart-line fa-2x"></i>
@@ -61,16 +60,16 @@
                         <p>We will tailor a skills roadmap to your career goals and elevate your potential.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="feature-box text-center">
                         <div class="feature-icon mb-3">
                             <i class="fas fa-briefcase fa-2x"></i>
                         </div>
                         <h3>WHERE SKILLS MEET SUCCESS</h3>
-                        <p>Elevate your expertise and gain the experience to build your portfolio and land that job.</p> 
+                        <p>Elevate your expertise and gain the experience to build your portfolio and land that job.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="feature-box text-center">
                         <div class="feature-icon mb-3">
                             <i class="fas fa-headset fa-2x"></i>
@@ -83,22 +82,30 @@
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Elevate</h2>
+    <section id="about" class="about text-center py-5">
+        <div class="container">
+            <h2>About Elevate</h2>
             <p>Welcome to Elevate – your trusted partner in professional growth and career advancement. At Elevate, we are committed to empowering professionals to reach their fullest potential by providing personalized career coaching and development services. Our mission is to help you meet all your career goals through a comprehensive suite of services designed to equip you with the skills and confidence needed to excel in today’s dynamic job market.</p>
-            <p>At Elevate, we believe that every professional journey is unique. Our experienced coaches work closely with you to understand your individual needs and aspirations, offering personalized support and actionable insights. We are passionate about unlocking potential and providing the tools necessary for you to thrive in your career.</p>   
+            <p>At Elevate, we believe that every professional journey is unique. Our experienced coaches work closely with you to understand your individual needs and aspirations, offering personalized support and actionable insights. We are passionate about unlocking potential and providing the tools necessary for you to thrive in your career.</p>
             <p>Join us at Elevate and take the first step towards achieving your professional dreams. Together, we can build a future where your career goals are not just aspirations, but realities.</p>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <button type="submit">Submit</button>
-        </form>
+    <section id="contact" class="contact py-5 bg-light">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="text-center">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control mx-auto" style="max-width: 300px;">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control mx-auto" style="max-width: 300px;">
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+        </div>
     </section>
 
     <footer class="bg-dark text-white text-center py-4">
